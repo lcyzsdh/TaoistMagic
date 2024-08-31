@@ -15,11 +15,13 @@ public class ModDataGenerator {
     public static void gatherData(GatherDataEvent event){
         DataGenerator generator=event.getGenerator();
         PackOutput output=generator.getPackOutput();
+        var lp=event.getLookupProvider();
 
         ExistingFileHelper existingFileHelper=event.getExistingFileHelper();
 
         generator.addProvider(event.includeClient(),new ModENLanguageProvider(output));
         generator.addProvider(event.includeClient(),new ModItemModelProvider(output,existingFileHelper));
         generator.addProvider(event.includeClient(),new ModBlockStateProvider(output,existingFileHelper));
+        generator.addProvider(event.includeServer(),new ModWorldgen(output,lp));
     }
 }
