@@ -15,7 +15,8 @@ public class CreativeTabRegister {
     public static final Supplier<CreativeModeTab> TAOIST_MAGIC_TAB=CREATIVE_TAB.register("taoist_magic_tab",()->CreativeModeTab.builder()
             .icon(()->new ItemStack(ItemRegister.METAL_PIECE.get()))
             .displayItems((pParams,pOutput)->{
-                pOutput.accept(ItemRegister.METAL_PIECE.get());
+                ItemRegister.ITEM_LIST.forEach(item-> pOutput.accept(item.get()));
+                BlockRegister.BLOCK_LIST.forEach(block->pOutput.accept(block.get()));
             })
             .title(Component.translatable("itemGroup."+TaoistMagic.MOD_ID+".taoist_magic_tab")).build());
 }
