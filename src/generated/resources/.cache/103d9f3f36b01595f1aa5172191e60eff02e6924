@@ -1,4 +1,4 @@
-// 1.21.1	2024-08-31T19:15:09.281782	Registries
+// 1.21.1	2024-09-01T12:36:43.893599	Registries
 bc4c5a921586d87e742e53d8e7293f6c01c99101 data/taoist_magic/neoforge/biome_modifier/add_origin_stone.json
-d1d9ef6c098e4e885b00ff3480dd94306081d4f7 data/taoist_magic/worldgen/configured_feature/origin_stone.json
-df936c8398e175581290054262d044fb108da29c data/taoist_magic/worldgen/placed_feature/origin_stone.json
+2ac5d37c5317620f4a170120e9c1236332df817f data/taoist_magic/worldgen/configured_feature/origin_stone.json
+de7f8faee996457459f68c28ac42f49034667a78 data/taoist_magic/worldgen/placed_feature/origin_stone.json

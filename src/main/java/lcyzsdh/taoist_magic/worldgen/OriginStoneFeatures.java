@@ -21,9 +21,11 @@ public class OriginStoneFeatures {
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?,?>> pContext){
         RuleTest stoneOreRuleTest=new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepSlateOreRuleTest=new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
         List<OreConfiguration.TargetBlockState> list=List.of(
-                OreConfiguration.target(stoneOreRuleTest, BlockRegister.DIRT_ORIGIN_STONE.get().defaultBlockState())
+                OreConfiguration.target(stoneOreRuleTest, BlockRegister.DIRT_ORIGIN_STONE.get().defaultBlockState()),
+                OreConfiguration.target(deepSlateOreRuleTest,BlockRegister.DIRT_ORIGIN_STONE.get().defaultBlockState())
         );
         FeatureUtils.register(pContext,ORIGIN_STONE, Feature.ORE,new OreConfiguration(list,9));
     }

@@ -20,7 +20,7 @@ public class OriginStonePlacement {
     public static void bootstrap(BootstrapContext<PlacedFeature> pContext){
         HolderGetter<ConfiguredFeature<?,?>> holderGetter=pContext.lookup(Registries.CONFIGURED_FEATURE);
         Holder<ConfiguredFeature<?,?>> stoneHolder=holderGetter.getOrThrow(OriginStoneFeatures.ORIGIN_STONE);
-        PlacementUtils.register(pContext,ORIGIN_STONE,stoneHolder,commonOrePlacement(16,HeightRangePlacement.uniform(VerticalAnchor.absolute(-64),VerticalAnchor.absolute(70))));
+        PlacementUtils.register(pContext,ORIGIN_STONE,stoneHolder,commonOrePlacement(16,HeightRangePlacement.uniform(VerticalAnchor.absolute(-64),VerticalAnchor.absolute(100))));
     }
 
     private static List<PlacementModifier> commonOrePlacement(int pCount,PlacementModifier pHeight){
