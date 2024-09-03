@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "taoist_magic:block/peach_wood_log_top",
+    "side": "taoist_magic:block/peach_wood_log"
+  }
+}

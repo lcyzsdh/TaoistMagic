@@ -3,6 +3,7 @@ package lcyzsdh.taoist_magic.data;
 import lcyzsdh.taoist_magic.TaoistMagic;
 import lcyzsdh.taoist_magic.registry.ItemRegister;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 

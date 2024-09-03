@@ -11,7 +11,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.ArrayList;
@@ -35,14 +34,8 @@ public class BlockRegister {
             .strength(3.0F,4.0F)
             .sound(SoundType.WOOD));
 
-    public static final DeferredBlock<Block> PEACH_WOOD_LOG=BLOCKS.register("peach_wood_log",()->new RotatedPillarBlock(
-            BlockBehaviour.Properties.of()
-                    .mapColor(p_152624_ -> p_152624_.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.WOOD : MapColor.PODZOL)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
-                    .sound(SoundType.WOOD)
-                    .ignitedByLava()
-    ));
+    public static final DeferredBlock<RotatedPillarBlock> PEACH_WOOD_LOG=logRegister("peach_wood_log");
+
 
     public static DeferredBlock<Block> register(String name){
         DeferredBlock<Block> block=BLOCKS.registerSimpleBlock(name, BlockBehaviour.Properties.of());
@@ -60,5 +53,18 @@ public class BlockRegister {
 
     public static void registerBlockItem(Supplier<Block> block, String name){
         ItemRegister.ITEMS.register(name,()->new BlockItem(block.get(),new Item.Properties()));
+    }
+
+    public static DeferredBlock<RotatedPillarBlock> logRegister(String name){
+        DeferredBlock<RotatedPillarBlock> block=BLOCKS.register(name,()->new RotatedPillarBlock(
+                BlockBehaviour.Properties.of()
+                        .mapColor(state -> state.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.WOOD : MapColor.PODZOL)
+                        .instrument(NoteBlockInstrument.BASS)
+                        .strength(2.0F)
+                        .sound(SoundType.WOOD)
+                        .ignitedByLava()
+        ));
+        ItemRegister.ITEMS.register(name,()->new BlockItem(block.get(),new Item.Properties()));
+        return block;
     }
 }
