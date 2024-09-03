@@ -17,6 +17,7 @@ public class CreativeTabRegister {
             .displayItems((pParams,pOutput)->{
                 ItemRegister.ITEM_LIST.forEach(item-> pOutput.accept(item.get()));
                 BlockRegister.BLOCK_LIST.forEach(block->pOutput.accept(block.get()));
+                pOutput.accept(BlockRegister.PEACH_WOOD_LOG.get());
             })
             .title(Component.translatable("itemGroup."+TaoistMagic.MOD_ID+".taoist_magic_tab")).build());
 }

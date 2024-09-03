@@ -1,6 +1,7 @@
 package lcyzsdh.taoist_magic.registry;
 
 import lcyzsdh.taoist_magic.TaoistMagic;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
