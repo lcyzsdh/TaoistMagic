@@ -1,4 +1,5 @@
-// 1.21.1	2024-09-03T16:17:08.635813	Tags for minecraft:block mod id taoist_magic
+// 1.21.1	2024-09-05T15:53:57.600541	Tags for minecraft:block mod id taoist_magic
 95beb91132671cc8fbd9b858cc164e196395cffa data/minecraft/tags/block/mineable/pickaxe.json
 95beb91132671cc8fbd9b858cc164e196395cffa data/minecraft/tags/block/needs_stone_tool.json
+b24432a29a5b8c952c571ec87e3511b207cc7d49 data/minecraft/tags/block/saplings.json
 1051322957f1689cb290438a4de10ab3f64d310d data/taoist_magic/tags/block/peach_wood_logs.json

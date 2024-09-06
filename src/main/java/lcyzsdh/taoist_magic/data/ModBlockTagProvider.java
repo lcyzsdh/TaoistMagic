@@ -37,5 +37,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BlockRegister.WATER_ORIGIN_STONE.get());
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BlockRegister.METAL_ORIGIN_STONE.get());
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BlockRegister.FIRE_ORIGIN_STONE.get());
+        this.tag(BlockTags.SAPLINGS).add(BlockRegister.PEACH_SAPLING.get());
     }
 }

@@ -1,9 +1,7 @@
 package lcyzsdh.taoist_magic.data;
 
 import lcyzsdh.taoist_magic.TaoistMagic;
-import lcyzsdh.taoist_magic.worldgen.ModBiomeModifier;
-import lcyzsdh.taoist_magic.worldgen.OriginStoneFeatures;
-import lcyzsdh.taoist_magic.worldgen.OriginStonePlacement;
+import lcyzsdh.taoist_magic.worldgen.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -18,6 +16,8 @@ public class ModWorldgen extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER=new RegistrySetBuilder()
             .add(Registries.CONFIGURED_FEATURE, OriginStoneFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, OriginStonePlacement::bootstrap)
+            .add(Registries.CONFIGURED_FEATURE, PeachTreeFeature::bootstrap)
+            .add(Registries.PLACED_FEATURE, PeachTreePlacement::bootstrap)
             .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifier::bootstrap);
     public ModWorldgen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER,Set.of(TaoistMagic.MOD_ID));

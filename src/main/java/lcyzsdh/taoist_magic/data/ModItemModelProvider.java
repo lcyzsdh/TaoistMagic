@@ -1,6 +1,7 @@
 package lcyzsdh.taoist_magic.data;
 
 import lcyzsdh.taoist_magic.TaoistMagic;
+import lcyzsdh.taoist_magic.registry.BlockRegister;
 import lcyzsdh.taoist_magic.registry.ItemRegister;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;

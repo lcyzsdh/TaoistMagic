@@ -1,11 +1,14 @@
 package lcyzsdh.taoist_magic.data;
 
 import lcyzsdh.taoist_magic.TaoistMagic;
+import lcyzsdh.taoist_magic.registry.BlockRegister;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -21,5 +24,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.copy(ModBlockTagProvider.PEACH_WOOD_LOGS,PEACH_WOOD_LOGS);
+
+        //Vanilla Tags
+        this.tag(ItemTags.SAPLINGS).add(BlockRegister.PEACH_SAPLING.asItem());
     }
 }
