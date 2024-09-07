@@ -20,10 +20,10 @@ public class ModBiomeModifier {
         var placedFeatures=pContext.lookup(Registries.PLACED_FEATURE);
         var biomes=pContext.lookup(Registries.BIOME);
         pContext.register(ADD_ORIGIN_STONE,new BiomeModifiers.AddFeaturesBiomeModifier(biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(OriginStonePlacement.ORIGIN_STONE)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacement.ORIGIN_STONE)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
         pContext.register(ADD_PEACH_TREE,new BiomeModifiers.AddFeaturesBiomeModifier(biomes.getOrThrow(BiomeTags.IS_FOREST),
-                HolderSet.direct(placedFeatures.getOrThrow(PeachTreePlacement.PEACH_TREE)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacement.PEACH_TREE)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 }

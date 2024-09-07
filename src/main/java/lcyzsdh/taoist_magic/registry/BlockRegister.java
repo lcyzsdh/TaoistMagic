@@ -1,7 +1,7 @@
 package lcyzsdh.taoist_magic.registry;
 
 import lcyzsdh.taoist_magic.TaoistMagic;
-import lcyzsdh.taoist_magic.worldgen.PeachTreeFeature;
+import lcyzsdh.taoist_magic.worldgen.ModFeatures;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -52,7 +52,7 @@ public class BlockRegister {
                     .isRedstoneConductor((state,fe,e)->{return false;})
     ));
     public static final DeferredBlock<SaplingBlock> PEACH_SAPLING=BLOCKS.register("peach_sapling",()->new SaplingBlock(new TreeGrower("peach_wood",
-            Optional.empty(),Optional.of(PeachTreeFeature.PEACH_TREE),Optional.empty()),BlockBehaviour.Properties.of()
+            Optional.empty(),Optional.of(ModFeatures.PEACH_TREE),Optional.empty()),BlockBehaviour.Properties.of()
             .noCollission()
             .randomTicks()
             .instabreak()

@@ -1,4 +1,7 @@
-// 1.21.1	2024-09-01T12:36:43.893599	Registries
+// 1.21.1	2024-09-07T17:40:48.820567	Registries
 bc4c5a921586d87e742e53d8e7293f6c01c99101 data/taoist_magic/neoforge/biome_modifier/add_origin_stone.json
+5d39cdc8e703c358abf206e0abe999add9236739 data/taoist_magic/neoforge/biome_modifier/add_peach_tree.json
 2ac5d37c5317620f4a170120e9c1236332df817f data/taoist_magic/worldgen/configured_feature/origin_stone.json
+38e52059b199a40a8a95006f66bc78168e7deceb data/taoist_magic/worldgen/configured_feature/peach_tree.json
 de7f8faee996457459f68c28ac42f49034667a78 data/taoist_magic/worldgen/placed_feature/origin_stone.json
+ae6a9ca531b36d6f4fd06adf81c0cd165f538567 data/taoist_magic/worldgen/placed_feature/peach_tree.json
