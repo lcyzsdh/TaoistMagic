@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
   "biomes": "#minecraft:is_overworld",
-  "features": "taoist_magic:origin_stone",
+  "features": "taoist_magic:metal_origin_stone",
   "step": "underground_ores"
 }

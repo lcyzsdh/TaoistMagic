@@ -1,9 +1,9 @@
 {
-  "feature": "taoist_magic:origin_stone",
+  "feature": "taoist_magic:water_origin_stone",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 16
+      "count": 14
     },
     {
       "type": "minecraft:in_square"
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "absolute": 100
+          "absolute": 140
         },
         "min_inclusive": {
-          "absolute": -64
+          "absolute": -10
         }
       }
     },

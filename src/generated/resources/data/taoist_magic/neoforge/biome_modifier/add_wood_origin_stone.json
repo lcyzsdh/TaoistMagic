@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      "#minecraft:is_forest",
+      "#minecraft:is_jungle"
+    ]
+  },
+  "features": "taoist_magic:wood_origin_stone",
+  "step": "underground_ores"
+}
